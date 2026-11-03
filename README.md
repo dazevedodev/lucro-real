@@ -1,36 +1,41 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Lucro Real
 
-## Getting Started
+**App para motoristas de Uber, 99 e InDrive verem quanto sobra de verdade em cada corrida**, depois do combustível e do desgaste do carro, e não só o valor bruto que o aplicativo mostra.
 
-First, run the development server:
+![Lucro Real](docs/capa.png)
+
+> Em desenvolvimento. A versão web e o app Android já funcionam; falta o lançamento.
+
+## O que faz
+
+- **Lucro por corrida:** o motorista informa o valor e os quilômetros, e o app desconta combustível e manutenção pelo consumo do carro dele.
+- **Na tela do Uber:** no Android, uma bolha flutuante fica por cima do app de corrida. Dá para lançar a corrida ali mesmo, digitando ou por voz, sem trocar de app.
+- **Dia e mês:** quanto sobrou de verdade em cada período.
+- **Catálogo de carros:** o consumo de cada modelo já vem cadastrado, e o motorista pode ajustar.
+- **Venda automática:** a compra aprovada na Kiwify chega por webhook, o acesso é criado na hora e a senha vai por e-mail.
+
+## Como foi feito
+
+- **Web:** Next.js (App Router), TypeScript e Tailwind, com Supabase para banco e login.
+- **Android:** Capacitor abre o app web, e a bolha flutuante é um plugin nativo em **Kotlin** que fala direto com a API (`/api/rides`) usando o token do usuário.
+- **Uma sessão por conta:** a mesma trava vale na web e na bolha, para o acesso não ser dividido.
+- **Contas testadas:** o cálculo do lucro e os totais por dia e mês têm testes com Vitest. O arredondamento garante que combustível, manutenção e lucro sempre somam exatamente o valor recebido.
+
+## Stack
+
+Next.js · TypeScript · Tailwind · Supabase · Capacitor · Kotlin · Resend · Kiwify · Vitest
+
+## Rodando
 
 ```bash
+npm install
+cp .env.local.example .env.local   # preencha com as chaves do seu Supabase
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm test
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+O passo a passo completo (banco, webhook da Kiwify, app Android e o que falta) está em [`docs/DETALHES-TECNICOS.md`](docs/DETALHES-TECNICOS.md).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Feito por [Daniel Dazevedo](https://dazevedo.dev) · DAZEVEDO

@@ -1,0 +1,33 @@
+{
+  "_readme": "Fonte de verdade do catálogo de consumo médio por modelo. Editar aqui e rodar `node scripts/generate-car-catalog-seed.mjs` para regenerar supabase/seed.sql. Valores de consumo são estimativas de referência (baseadas em faixas divulgadas pelo INMETRO/PBEV para a motorização flex mais comum de cada modelo, ciclo combinado cidade/estrada, modo gasolina) — não é exato por versão/câmbio, o motorista pode ajustar o valor no cadastro do carro dele.",
+  "models": [
+    { "brand": "Chevrolet", "model": "Onix", "yearFrom": 2020, "yearTo": 2024, "fuelType": "gasolina", "consumptionCombinedKml": 12.5 },
+    { "brand": "Chevrolet", "model": "Onix Plus", "yearFrom": 2020, "yearTo": 2024, "fuelType": "gasolina", "consumptionCombinedKml": 12.3 },
+    { "brand": "Chevrolet", "model": "Prisma", "yearFrom": 2013, "yearTo": 2019, "fuelType": "gasolina", "consumptionCombinedKml": 11.8 },
+    { "brand": "Chevrolet", "model": "Cobalt", "yearFrom": 2012, "yearTo": 2019, "fuelType": "gasolina", "consumptionCombinedKml": 11.5 },
+    { "brand": "Chevrolet", "model": "Spin", "yearFrom": 2013, "yearTo": 2022, "fuelType": "gasolina", "consumptionCombinedKml": 10.5 },
+    { "brand": "Volkswagen", "model": "Gol", "yearFrom": 2015, "yearTo": 2023, "fuelType": "gasolina", "consumptionCombinedKml": 11.5 },
+    { "brand": "Volkswagen", "model": "Voyage", "yearFrom": 2015, "yearTo": 2023, "fuelType": "gasolina", "consumptionCombinedKml": 11.3 },
+    { "brand": "Volkswagen", "model": "Fox", "yearFrom": 2010, "yearTo": 2019, "fuelType": "gasolina", "consumptionCombinedKml": 11.5 },
+    { "brand": "Volkswagen", "model": "Polo", "yearFrom": 2018, "yearTo": 2024, "fuelType": "gasolina", "consumptionCombinedKml": 12.5 },
+    { "brand": "Volkswagen", "model": "Virtus", "yearFrom": 2018, "yearTo": 2024, "fuelType": "gasolina", "consumptionCombinedKml": 12.3 },
+    { "brand": "Fiat", "model": "Palio", "yearFrom": 2010, "yearTo": 2017, "fuelType": "gasolina", "consumptionCombinedKml": 11.0 },
+    { "brand": "Fiat", "model": "Siena", "yearFrom": 2010, "yearTo": 2016, "fuelType": "gasolina", "consumptionCombinedKml": 11.2 },
+    { "brand": "Fiat", "model": "Mobi", "yearFrom": 2017, "yearTo": 2023, "fuelType": "gasolina", "consumptionCombinedKml": 14.0 },
+    { "brand": "Fiat", "model": "Argo", "yearFrom": 2018, "yearTo": 2023, "fuelType": "gasolina", "consumptionCombinedKml": 13.0 },
+    { "brand": "Fiat", "model": "Cronos", "yearFrom": 2019, "yearTo": 2023, "fuelType": "gasolina", "consumptionCombinedKml": 12.8 },
+    { "brand": "Ford", "model": "Ka", "yearFrom": 2015, "yearTo": 2021, "fuelType": "gasolina", "consumptionCombinedKml": 13.0 },
+    { "brand": "Ford", "model": "Fiesta", "yearFrom": 2011, "yearTo": 2019, "fuelType": "gasolina", "consumptionCombinedKml": 12.0 },
+    { "brand": "Renault", "model": "Sandero", "yearFrom": 2015, "yearTo": 2023, "fuelType": "gasolina", "consumptionCombinedKml": 11.5 },
+    { "brand": "Renault", "model": "Logan", "yearFrom": 2015, "yearTo": 2023, "fuelType": "gasolina", "consumptionCombinedKml": 11.3 },
+    { "brand": "Renault", "model": "Kwid", "yearFrom": 2018, "yearTo": 2023, "fuelType": "gasolina", "consumptionCombinedKml": 14.5 },
+    { "brand": "Hyundai", "model": "HB20", "yearFrom": 2019, "yearTo": 2024, "fuelType": "gasolina", "consumptionCombinedKml": 13.0 },
+    { "brand": "Hyundai", "model": "HB20S", "yearFrom": 2019, "yearTo": 2024, "fuelType": "gasolina", "consumptionCombinedKml": 12.8 },
+    { "brand": "Toyota", "model": "Etios", "yearFrom": 2013, "yearTo": 2021, "fuelType": "gasolina", "consumptionCombinedKml": 13.5 },
+    { "brand": "Honda", "model": "Fit", "yearFrom": 2015, "yearTo": 2021, "fuelType": "gasolina", "consumptionCombinedKml": 12.5 },
+    { "brand": "Nissan", "model": "Versa", "yearFrom": 2020, "yearTo": 2024, "fuelType": "gasolina", "consumptionCombinedKml": 13.0 },
+    { "brand": "Nissan", "model": "March", "yearFrom": 2014, "yearTo": 2020, "fuelType": "gasolina", "consumptionCombinedKml": 12.8 },
+    { "brand": "Citroën", "model": "C3", "yearFrom": 2013, "yearTo": 2020, "fuelType": "gasolina", "consumptionCombinedKml": 11.5 },
+    { "brand": "Peugeot", "model": "208", "yearFrom": 2013, "yearTo": 2020, "fuelType": "gasolina", "consumptionCombinedKml": 12.0 }
+  ]
+}
