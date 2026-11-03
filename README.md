@@ -38,4 +38,4 @@ O passo a passo completo (banco, webhook da Kiwify, app Android e o que falta) e
 
 ---
 
-Feito por [Daniel Dazevedo](https://dazevedo.dev) · DAZEVEDO
+Feito por [Daniel D'Azevedo](https://dazevedo.dev) · DAZEVEDO
